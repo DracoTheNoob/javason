@@ -202,7 +202,7 @@ public class Json {
         final String baseKey = key;
         key = key.replace(".", SPLITTER);
         String[] split = key.split(SPLITTER);
-        StringBuilder currentKey = new StringBuilder(split[0]);
+        StringBuilder currentKey = new StringBuilder(split.length > 1 ? split[0] : "");
 
         if(get(split[0], JSONObject.class) == null) {
             this.json.put(split[0], new JSONObject());
