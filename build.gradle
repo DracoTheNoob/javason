@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group = 'fr.dtn'
+version = '1.0'
+compileJava.options.encoding = 'utf-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+}
